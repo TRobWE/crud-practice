@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+ Bonjour Tu Le Monde In HTML New Kiddies
+ <ul class="translate">
+   <% for(var i=0; i<translate.length; i++) {%>
+     <li class="translate">
+       <span><%= translate[i].english %></span>
+       <span><%= translate[i].french %></span>
+     </li>
+   <% } %>
+ </ul>
+<form action="/translate" method="POST">
+  <input type="text" placeholder="English" name="english">
+  <input type="text" placeholder="French" name="french">
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
